@@ -3,9 +3,9 @@
 Bu proektning asosiy vazifasi yengil avtomabillar va Yuk tashish avtomabillarni
 ro`yhatga oladi yani registratsiya qiladi.
 
-Yaroqsiz avtomabillarni avtomatik tarzda o'z bazasidan o`chirib tashlaydi.
+Yaroqsiz avtomabillarni avtomatik tarzda o'z bazasidan o'chirib tashlaydi.
 
-bosh sahifada Avtomabillar haqida yangiliklar va baholari ko`rsatib o`tiladi.
+bosh sahifada Avtomabillar haqida yangiliklar va baholari ko'rsatib o`tiladi.
 
 keyingi sahifa avtomabillar bazasi yani ro'yhati bo`ladi.
 bu avtomabilarning haqida qo`shimcha malumotlar masalan Rangi,Nomeri,Qachon ishlab
