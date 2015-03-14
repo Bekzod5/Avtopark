@@ -1,10 +1,37 @@
 @(message: String)
 
 
-@main("Welcome to Play") {
+@main("Avtopark.uz") {
 
     @navbar()
 
-    <div class="text-area text text-center" style="font-size: 56px;color: blue" > Salom Heroku</div>
+<div class="row container" style="margin-top: 80px">
+    <div class="col-xs-3">
+        <nav class="navbar navbar-inverse">
+            <ul>
+                <li>
+                    <a href="#">Bosh sahifa</a>
+                </li>
+                <li>
+                    <a href="@routes.carlist.cars()">AvtoRo'yhat</a>
+                </li>
+                <li>
+                    <a href="#">Yangiliklar</a>
+                </li>
+            </ul>
+
+        </nav>
+
+   <div class="thumbnail" style="margin-top: 20px">
+         <img  src="@routes.Assets.at("images/1%20(129).jpg")" class="img-thumbnail">
+
+       <span class="text text-area">BMW avtomabili haqida yangi ma'lumotlar.Yangi modellari va</span>
+       <button class="btn btn-default">Davomi..</button>
+</div>
+    </div>
+    <div class="jumbotron col-xs-7 col-xs-offset-2" style="">
+        <h1>Hali bu yerga ma'lumotlar yoziladi</h1>
+    </div>
+          </div>
 
 }
