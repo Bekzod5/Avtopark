@@ -1,11 +1,33 @@
 @()
 
-<nav class="navbar navbar-fixed-top navbar-inverse " style="height: 30px;" role="navigation">
+
+<nav class="navbar navbar-fixed-top navbar-inverse" style="height: 30px;" role="navigation">
   <div class="navbar-header">
-    <span class="text-danger " style="margin-left: 30px;margin-top: 15px; font-size: 36px">
-      <b>Avtopark.uz
-    </b>
-    </span>
+      <ul style="font-size: 20px" class="nav navbar-nav">
+                   <li class="dropdown my_border my_border_r ">
+
+              <a href="#" class="dropdown-toggle " data-toggle="dropdown"><span class="glyphicon glyphicon-arrow-down"></span> <b>Menu</b></a>
+                                <ul class="dropdown-menu">
+                  <li><div class="row" >
+                      <div class="col-xs-3">
+                          <ul class="nav " data-spy="affix">
+                              <li>
+                                  <a href="@routes.Application.index()" class="a_uchun"><span class="glyphicon glyphicon-home"></span>Home</a>
+                                  <a href="@routes.carlist.cars()" class="a_uchun"><span class="glyphicon glyphicon-th-list" ></span>Carlist</a>
+                                  <a href="@routes.Application.news()" class="a_uchun"><span class="glyphicon glyphicon-star-empty"></span>CarNews</a>
+                                  <a href="#" class="a_uchun"><span class="glyphicon glyphicon-wrench"></span>CarService</a>
+                                  <a href="@routes.Application.log()" class="a_uchun"><span class="glyphicon glyphicon-log-in"></span> login in</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+
+              </ul>
+          </li>
+          <li style="padding-top: 13px; padding-left: 10px; color: #9d9d9d">
+              Avtopark.uz
+          </li>
+      </ul>
      </div>
   <div>
    <div class="input-group pull-right " style="margin-top: 5px">
@@ -17,3 +39,4 @@
 
   </div>
 </nav>
+

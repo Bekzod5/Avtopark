@@ -1,0 +1,45 @@
+.row > div.col-xs-3 > ul.nav > li > a:hover {
+    background-color: slategray;
+}
+
+.row > div.col-xs-3 > ul.nav > li > a:active {
+    background-color: blue;
+}
+
+.row > div.col-xs-3 > ul.nav > li {
+    width: 220px;
+    background-color: #181818;
+    font-size: 22px;
+}
+
+.row > div.col-xs-3 > ul.nav > li > a > span {
+    margin-right: 6%;
+    margin-left: 20%;
+}
+
+.my_border{
+    border-left: 0 dotted #9d9d9d;
+    border-left-width: 1px;
+    }
+
+.my_border_r{
+    border-right: 0 dotted #9d9d9d;
+    border-right-width: 1px;
+
+}
+
+.a_uchun{
+    color: #ffffff;
+border-bottom: 0 solid #373737;
+    border-bottom-width: 1px;
+    border-top: 0 solid #777777;
+    border-top-width: 1px;
+}
+.down_pading{
+    padding-bottom: 40px;
+
+}
+.img_size{
+    width: 60px;
+    height: 50px;
+}

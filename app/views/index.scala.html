@@ -4,34 +4,123 @@
 @main("Avtopark.uz") {
 
     @navbar()
+    <div class="container" style="padding-top: 65px">
+    <div class="row ">
+        <div class="col-xs-3 ">
+            <div class="thumbnail" style="background-color: #a8a5a7">
+            <img src="@routes.Assets.at("images/BMW.jpg")" class="img-thumbnail">
+           <div class="text">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at deserunt eveniet labore minus natus porro provident rerum suscipit vitae! Error, nihil rem. Architecto, consequuntur deserunt impedit laboriosam minus molestiae numquam omnis pariatur suscipit veniam. Harum illo neque numquam rem!
+        </div>
+            <p><button class="btn btn-primary">Davomi...</button></p>
+                </div>
+            <div class="thumbnail" style="background-color: #a8a5a7">
+                <img src="@routes.Assets.at("images/BMW_Black.jpg")" class="img-thumbnail">
+                <span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda aut corporis esse magni placeat provident quia quod rem ullam?</span>
+               <p> <button class="btn btn-primary">Davoni...</button></p>
+            </div>
+        </div>
 
-<div class="row container" style="margin-top: 80px">
-    <div class="col-xs-3">
-        <nav class="nav navbar navbar-inverse" style="height: 200px">
-            <ul style="font-size: 26px" class="text" class="nav nav-pills">
-                <li >
-                    <a  href="#">Bosh sahifa</a>
-                </li>
-                <li>
-                    <a href="@routes.carlist.cars()">AvtoRo'yhat</a>
-                </li>
-                <li>
-                    <a href="#">Yangiliklar</a>
-                </li>
-            </ul>
 
-        </nav>
+    <div style="width: 700px" class="col-xs-9">
+        <div id="car-carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="@routes.Assets.at("images/slide1.jpg")" class="center-block" alt=""/>
 
-   <div class="thumbnail" style="margin-top: 20px">
-         <img  src="@routes.Assets.at("images/BMW.jpg")" class="img-thumbnail">
+                    <div class="carousel-caption">
+                        <h3>Nexia 2</h3>
 
-       <span class="text text-area">BMW avtomabili haqida yangi ma'lumotlar.Yangi modellari va</span>
-       <button class="btn btn-default">Davomi..</button>
-</div>
+                        <p>Avtopark.uz</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="@routes.Assets.at("images/slide2.jpg")" class="center-block" alt=""/>
+                    <div class="carousel-caption">
+                        <h3>Malibu</h3>
+
+                        <p>Avtopark.uz</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="@routes.Assets.at("images/slide3.jpg")" class="center-block" alt=""/>
+                    <div class="carousel-caption">
+                        <h3>Captiva</h3>
+
+                        <p>Avtopark.uz</p>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="@routes.Assets.at("images/slide4.jpg")" class="center-block" alt=""/>
+                    <div class="carousel-caption">
+                        <h3>Spark Daewoo</h3>
+
+                        <p>Avtopark.uz</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="@routes.Assets.at("images/slide5.jpg")" class="center-block" alt=""/>
+                    <div class="carousel-caption">
+                        <h3>BMW</h3>
+
+                        <p>Avtopark.uz</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="@routes.Assets.at("images/slide6.jpg")" class="center-block" alt=""/>
+                    <div class="carousel-caption">
+                        <h3>Spark chevrolet</h3>
+
+                        <p>Avtopark.uz</p>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" role="button" data-slide="prev" href="#car-carousel">
+                <span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" role="button" data-slide="next" href="#car-carousel"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#car-carousel" data-slide-to="0"></li>
+                <li data-target="#car-carousel" data-slide-to="1"></li>
+                <li data-target="#car-carousel" data-slide-to="2"></li>
+                <li data-target="#car-carousel" data-slide-to="3"></li>
+                <li data-target="#car-carousel" data-slide-to="4"></li>
+                <li data-target="#car-carousel" data-slide-to="5"></li>
+            </ol>
+        </div>
+       <br/>
+     <div class="jumbotron">
+         <div class="text text-center">
+             <h2>Welcome to our web site</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam asperiores beatae commodi cupiditate delectus dicta dignissimos dolorem ducimus ea eos fugiat inventore iusto libero magnam minima necessitatibus neque obcaecati optio porro, praesentium quidem saepe, suscipit velit veritatis, vero voluptates.</p>
+         </div>
+     </div>
+
     </div>
-    <div class="jumbotron col-xs-7 col-xs-offset-2" style="">
-        <h1>Hali bu yerga ma'lumotlar yoziladi</h1>
     </div>
-          </div>
+    </div>
+    <div class="center-block">
+        <div class="text-center">
+     <table class="table">
+                     <tr class="down_pading ">
+                <td style="">
+                   <a href="https://mail.ru"> <img src="@routes.Assets.at("images/email.png")" class="img_size"></a>
+                    <a href="https://facebook.com"><img src="@routes.Assets.at("images/Facebook.png")"></a>
+                    <a href="https://odnoklassniki.ru"><img src="@routes.Assets.at("images/odnoklassniki1.png")" class="img_size" ></a>
+                    <a href="https://chevrolet.ru"><img src="@routes.Assets.at("images/carhtml2.png")" class="img_size"> </a>
+                    <a href="https://chevrolet.ru"><img src="@routes.Assets.at("images/carhtml.png")"> </a>
+                </td>
+
+             </tr>
+
+
+     </table>
+            </div>
+
+            
+
+
+    </div>
 
 }

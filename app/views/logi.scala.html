@@ -1,0 +1,48 @@
+@()
+
+@main("log"){
+    @navbar()
+
+
+<div class="containe">
+    <div class="h1 text-center text" style="padding-top: 70px;font-family: bold">
+        Welcome our in site
+
+
+
+    </div>
+    <div class="row">
+     <div class="col-xs-offset-4 col-xs-4">
+      <div class="panel panel-default">
+          <div class="h3 panel-heading" style="font-family: bold">
+              Sign in to continue
+          </div>
+              <div class="panel-body">
+
+                  <img src="@routes.Assets.at("images/contact.png" )" class="img-circle center-block" style="width: 200px;height: 200px">
+                  <br/>
+                  <div class="input">
+                            <div class="input-group">
+                           <span class="input-group-addon glyphicon glyphicon-user"></span>
+                                <input class="form-control" type="text" placeholder="Username">
+                            </div>
+                      <br/>
+                      <div class="input-group">
+                          <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                          <input class="form-control" type="password" placeholder="Password">
+                      </div>
+                      <br/>
+                      <button class="btn btn-warning">Sign in</button>
+                  </div>
+              </div>
+          <div class="panel-footer">
+              Don't have an account! <a href="#">Sign Up Here</a>
+          </div>
+
+      </div>
+              </div>
+
+      </div>
+    </div>
+
+}
