@@ -3,11 +3,14 @@
 # ~~~~
 
 # Home page
-GET        /                    controllers.Application.index
-GET        /list                @controllers.Cars.list
-GET        /news                controllers.Application.news
-GET        /log                controllers.Application.log
+GET         /                    controllers.Application.index
+GET         /list                @controllers.Cars.list
+GET         /add                 @controllers.Cars.addcars
+POST        /add                 @controllers.Cars.add
+GET         /news                controllers.Application.news
+GET         /log                 controllers.Application.log
+GET         /car/remove          @controllers.Cars.remove(id: Int)
 # Map static resources from the /public folder to the /assets URL path
-GET        /assets/*file        controllers.Assets.at(path="/public", file)
+GET         /assets/*file        controllers.Assets.at(path="/public", file)
 
     

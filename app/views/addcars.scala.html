@@ -1,0 +1,25 @@
+@()
+
+@main("Add") {
+
+    @navbar()
+
+    <div class="container main-content">
+        <h2 class="text-center">Add new cars</h2>
+        <form class="@routes.Cars.add()" method="post">
+            <div class="form-group">
+                <label for="inp-name">Nomi</label>
+                <input type="text" class="form-control" id="inp-name"
+                name="nomi" required="">
+            </div>
+            <div class="form-group">
+                <label for="inp-desc">modeli</label>
+                <textarea type="text" class="form-control" id="inp-desc"
+                name="modeli" required=""></textarea>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+}
