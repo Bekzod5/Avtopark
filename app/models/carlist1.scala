@@ -27,3 +27,16 @@ class jadvalTable(tag: Tag) extends Table[jadval](tag, "CARLIST"){
   def * = (id.?, nomi, modeli) <> (jadval.tupled, jadval.unapply _)
 
 }
+object for_num {
+  var p = 0
+
+  def inc_num = {
+    p += 1
+    p
+  }
+
+  def nul = {
+    p=0
+  }
+
+}

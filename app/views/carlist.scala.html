@@ -9,8 +9,8 @@
 
     <div class="container main-content" style="padding-top: 60px">
 
-        <h1 class="text-center">Cars Table</h1>
-        <table class="table table-striped">
+        <h1 class="text-center" style="color: #d9edf7">Cars Table</h1>
+        <table class="table " style="color: #31b0d5">
             <thead>
                 <tr>
                     <th>t/r</th>
@@ -21,7 +21,7 @@
             <tbody>
             @for(bor <- car) {
                 <tr>
-                    <td>@bor.id</td>
+                    <td>@for_num.inc_num</td>
                     <td>@bor.nomi</td>
                     <td>@bor.modeli</td>
                     <td>
@@ -31,6 +31,7 @@
                     </td>
                 </tr>
             }
+                @for_num.nul
             </tbody>
         </table>
     </div>
