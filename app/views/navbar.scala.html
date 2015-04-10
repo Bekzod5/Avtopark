@@ -1,4 +1,4 @@
-@()
+@(name:String)
 
 
 <header>
@@ -42,7 +42,7 @@
             </div>
             <div class="collapse navbar-right navbar-collapse">
                 <ul class="navbar-nav nav">
-                    <li class="active">
+                    <li class="@if(name=="home"){active}">
                         <a href="@routes.Application.index()" >
                             <b>
                         Home
@@ -50,22 +50,22 @@
                         </a>
 
                     </li>
-                    <li>
+                    <li class="@if(name=="list"){active}">
                         <a href="@routes.Cars.list()">
                             <b>CarList</b>
                         </a>
                     </li>
-                    <li>
+                    <li class="@if(name=="add"){active}">
                         <a href="@routes.Cars.addcars()">
                             <b>CarRegist</b>
                         </a>
                     </li>
-                    <li>
+                    <li class="@if(name=="carservice"){active}">
                         <a href="#">
                             <b>CarService</b>
                         </a>
                     </li>
-                    <li>
+                    <li class="@if(name=="new"){active}">
                         <a href="@routes.Application.news()">
                             <b>CarNews</b>
                         </a>

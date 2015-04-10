@@ -3,8 +3,8 @@
 
 @main("Avtopark.uz") {
 
-    @navbar()
-    <div class="container" style="padding-top: 65px">
+    @navbar("home")
+    <div class="container" style="padding-top: 65px" xmlns="http://www.w3.org/1999/html">
     <div class="row ">
         <div class="col-xs-3 col-lg-3">
             <div class="thumbnail" style="background-color: #a8a5a7">
@@ -100,26 +100,65 @@
     </div>
     </div>
     </div>
-    <div class="center-block">
-        <div class="text-center">
-     <table class="table">
-                     <tr class="down_pading ">
-                <td style="">
-                   <a href="https://mail.ru" title="agent"> <img src="@routes.Assets.at("images/email.png")" class="img_size"></a>
-                    <a href="https://facebook.com"><img src="@routes.Assets.at("images/Facebook.png")"></a>
-                    <a href="https://odnoklassniki.ru"><img src="@routes.Assets.at("images/odnoklassniki1.png")" class="img_size" ></a>
-                    <a href="https://chevrolet.ru"><img src="@routes.Assets.at("images/carhtml2.png")" class="img_size"> </a>
-                    <a href="https://chevrolet.ru"><img src="@routes.Assets.at("images/carhtml.png")"> </a>
-                </td>
+    @*<div class="center-block">*@
+        @*<div class="text-center">*@
+     @*<table class="table">*@
+                     @*<tr class="down_pading ">*@
+                @*<td style="">*@
+                   @*<a href="https://mail.ru" title="agent"> <img src="@routes.Assets.at("images/email.png")" class="img_size"></a>*@
+                    @*<a href="https://facebook.com"><img src="@routes.Assets.at("images/Facebook.png")"></a>*@
+                    @*<a href="https://odnoklassniki.ru"><img src="@routes.Assets.at("images/odnoklassniki1.png")" class="img_size" ></a>*@
+                    @*<a href="https://chevrolet.ru"><img src="@routes.Assets.at("images/carhtml2.png")" class="img_size"> </a>*@
+                    @*<a href="https://chevrolet.ru"><img src="@routes.Assets.at("images/carhtml.png")"> </a>*@
+                @*</td>*@
 
-             </tr>
+             @*</tr>*@
 
 
-     </table>
+     @*</table>*@
+            @*</div>*@
+
+            @**@
+
+
+    @*</div>*@
+
+    <div class="">
+        <nav class="navbar navbar-inverse  " role="navigation">
+            <div class="collapse navbar-collapse row">
+
+                <ul class="pull-left navbar-nav nav col-xs-6">
+                    <li><a href="#">wriless  Internet</a></li>
+                    <li> <a>Employement</a></li>
+                    <li><a href="@routes.Application.log()">Login</a></li>
+
+                </ul>
+                <ul class="col-xs-6 navbar-nav nav pull-right" >
+                         <div class="pull-right">
+
+
+
+
+
+
+                                <a href="https://facebook.com" title="Facebookga ulanish"><img src="@routes.Assets.at("images/Facebook.png")"></a>
+
+
+
+
+
+                                <a href="https://chevrolet.ru"><img src="@routes.Assets.at("images/carhtml2.png")" class="img_size"> </a>
+
+
+                                <a href="https://chevrolet.ru"><img src="@routes.Assets.at("images/carhtml.png")"> </a>
+
+
+
+                         </div>
+
+                </ul>
             </div>
-
-            
-
+        </nav>
 
     </div>
 

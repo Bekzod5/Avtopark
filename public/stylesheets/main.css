@@ -105,4 +105,9 @@ button:hover{
     border-color: #ff1a1e;
 }
 
+.collapse.navbar-collapse.row>ul.navbar-nav.nav>li>a:hover{
+    color: #ac2925;
+    background-color: rgba(255, 26, 30, 0.100);
+}
+
 
