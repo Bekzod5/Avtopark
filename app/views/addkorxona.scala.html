@@ -1,0 +1,19 @@
+@()
+
+@main("Add") {
+
+    @navbar("addkorxona")
+
+    <div class="container main-content top-mar">
+        <h2 class="text-center">Add new CarOficce</h2>
+        <form class="@routes.zavod.add()" method="post">
+            <div class="form-group">
+                <label for="inp-name">Name</label>
+                <input type="text" class="form-control" id=""
+                name="name" required="">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+}

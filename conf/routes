@@ -3,14 +3,26 @@
 # ~~~~
 
 # Home page
-GET         /                    controllers.Application.index
-GET         /list                @controllers.Cars.list
-GET         /add                 @controllers.Cars.addcars
-POST        /add                 @controllers.Cars.add
-GET         /news                controllers.Application.news
-GET         /log                 controllers.Application.log
-GET         /car/remove          @controllers.Cars.remove(id: Int)
+GET         /                          controllers.Application.index
+GET         /list                      @controllers.Cars.list
+GET         /add                       @controllers.Cars.addcars
+POST        /add                       @controllers.Cars.add
+GET         /news                      controllers.Application.news
+GET         /log                       controllers.Application.log
+GET         /car/remove                @controllers.Cars.remove(id: Int)
+POST        /cars/:id/edit           @controllers.Cars.update(id: Int)
+GET         /cars/:id/edit           @controllers.Cars.showEditForm(id: Int)
+
+
+GET         /uzavto/list               @controllers.zavod.list
+GET         /uzavto/new                @controllers.zavod.showAddForm
+POST        /uzavto/new                @controllers.zavod.add
+GET         /korxona/:id/remove        @controllers.zavod.remove(id: Int)
+POST        /korxona/:id/edit          @controllers.zavod.update(id: Int)
+GET         /korxona/:id/edit          @controllers.zavod.showEditForm(id: Int)
+
+
 # Map static resources from the /public folder to the /assets URL path
-GET         /assets/*file        controllers.Assets.at(path="/public", file)
+GET         /assets/*file              controllers.Assets.at(path="/public", file)
 
     

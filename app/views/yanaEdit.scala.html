@@ -1,31 +1,30 @@
-@(uzavto: List[korxona])
+@(korxona: jadval, uzavto: List[korxona] )
 
-@main("Add") {
+@main("Edit") {
 
-    @navbar("addcars")
+    @navbar("add")
 
     <div class="container main-content top-mar">
-        <h2 class="text-center">Add new cars</h2>
-        <form class="@routes.Cars.add()" method="post">
+        <h2 class="text-center">Edit Cars</h2>
+        <form class="@routes.Cars.update(korxona.id.get)" method="post">
             <div class="form-group">
                 <label for="inp-name">Nomi</label>
                 <input type="text" class="form-control" id="inp-name"
-                name="nomi" required="">
+                name="name" value="@korxona.nomi" required="">
             </div>
             <div class="form-group">
-                <label for="inp-desc">modeli</label>
+                <label for="inp-desc">Modeli</label>
                 <textarea type="text" class="form-control" id="inp-desc"
-                name="modeli" required=""></textarea>
+                name="description" required="">@korxona.modeli</textarea>
             </div>
             <div class="form-group">
                 <label for="inp-country">Korxonasi</label>
-                <select name="korxonaId" class="form-control" id="inp-country">
-                @for(korxona <-uzavto) {
-                    <option value="@korxona.id">@korxona.name</option>
+                <select name="country" class="form-control" id="inp-country">
+                @for(korxonasi <- uzavto) {
+                    <option value="@korxonasi.id">@korxonasi.name</option>
                 }
                 </select>
             </div>
-
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
