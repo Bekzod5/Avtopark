@@ -69,16 +69,3 @@ object for_num {
   }
 
 }
-object for_num {
-  var p = 0
-
-  def inc_num = {
-    p += 1
-    p
-  }
-
-  def nul = {
-    p=0
-  }
-
-}
