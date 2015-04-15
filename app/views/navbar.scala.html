@@ -1,90 +1,42 @@
-@(name: String)
+@()
 
 
-<header class="navbar-fixed-top">
-    <div class="top-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-6">
-                    <div class="top-number">
-                        <p><i class="fa fa-phone-square"></i> +998941415951</p>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="pull-right">
-                        <ul class="social-share">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <!--/.container-->
-    </div>
-        <!--/.top-bar-->
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toglle="collapse" data-target=".navbar-collapse" >
-                    <span class="icon-bar"></span>
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="#" class="navbar-header">
-                    <img src="@routes.Assets.at("images/webtext.jpg")">
-                </a>
-            </div>
-            <div class="collapse navbar-right navbar-collapse">
-                <ul class="navbar-nav nav">
-                    <li class="@if(name=="home"){active}">
-                        <a href="@routes.Application.index()" >
-                            <b>
-                                Home
-                            </b>
-                        </a>
+<nav class="navbar navbar-fixed-top navbar-inverse" style="height: 30px;" role="navigation">
+  <div class="navbar-header">
+      <ul style="font-size: 20px" class="nav navbar-nav">
+                   <li class="dropdown my_border my_border_r ">
 
-                    </li>
-                    <li class="@if(name=="carlist"){active}">
-                        <a href="@routes.Cars.list()">
-                            <b>CarList</b>
-                        </a>
-                    </li>
-                    <li class="@if(name=="addcars"){active}">
-                        <a href="@routes.Cars.addcars()">
-                            <b>CarRegist</b>
-                        </a>
-                    </li>
-                    <li class="@if(name=="carservice"){active}">
-                        <a href="#">
-                            <b>CarService</b>
-                        </a>
-                    </li>
-                    <li class="@if(name=="news"){active}">
-                        <a href="@routes.Application.news()">
-                            <b>CarNews</b>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="@routes.zavod.add()">
-                            <b>CarOficceAdd</b>
-                                </a>
-                    </li>
-                    <li >
-                        <a href="@routes.zavod.list()">
-                            <b>CarOficceList</b>
-                        </a>
-                    </li>
-                </ul>
+              <a href="#" class="dropdown-toggle " data-toggle="dropdown"><span class="glyphicon glyphicon-arrow-down"></span> <b>Menu</b></a>
+                                <ul class="dropdown-menu">
+                  <li class="row" >
+                      <div class="col-xs-3">
+                          <ul class="nav " data-spy="affix">
+                              <li>
+                                  <a href="@routes.Application.index()" class="a_uchun"><span class="glyphicon glyphicon-home"></span>Home</a>
+                                  <a href="@routes.Cars.list()" class="a_uchun"><span class="glyphicon glyphicon-th-list" ></span>Carlist</a>
+                                  <a href="@routes.Application.news()" class="a_uchun"><span class="glyphicon glyphicon-star-empty"></span>CarNews</a>
+                                  <a href="@routes.Cars.addcars()" class="a_uchun"><span class="glyphicon glyphicon-wrench"></span>CarService</a>
+                                  <a href="@routes.Application.log()" class="a_uchun"><span class="glyphicon glyphicon-log-in"></span> login in</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
 
-            </div>
+              </ul>
+          </li>
+          <li style="padding-top: 13px; padding-left: 10px; color: #9d9d9d">
+              Avtopark.uz
+          </li>
+      </ul>
+     </div>
+  <div>
+   <div class="input-group pull-right " style="margin-top: 5px">
+     <span>  <input type="email" class="input  form-control" style="right: auto; width: 200px;height: 40px;border-top-right-radius: 0px;" placeholder="Search...">
 
-        </div>
+      <button class="btn btn-primary" style="height: 40px; width: 60px;border-bottom-left-radius: 0px;">ok</button></span>
 
-    </nav>
-</header>
+   </div>
+
+  </div>
+</nav>
+

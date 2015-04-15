@@ -1,42 +1,36 @@
-@(car: List[Carss])
+@(car: List[jadval])
 
 
 @main("carlist") {
 
-    @navbar("carlist")
+    @navbar()
 
 
 
-    <div class="container main-content top-mar" style="padding-top: 60px">
+    <div class="container main-content" style="padding-top: 60px">
 
-        <h1 class="text-center" style="color: #d9edf7">Cars Table</h1>
-        <table class="table " style="color: #31b0d5">
+        <h1 class="text-center">Cars Table</h1>
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>t/r</th>
                     <th>nomi</th>
                     <th>modeli</th>
-                    <th>Zavodi</th>
                 </tr>
             </thead>
             <tbody>
             @for(bor <- car) {
                 <tr>
-                    <td>@for_num.inc_num</td>
-                    <td>@bor.carss.nomi</td>
-                    <td>@bor.carss.modeli</td>
-                    <td>@bor.korxonanomi</td>
+                    <td>@bor.id</td>
+                    <td>@bor.nomi</td>
+                    <td>@bor.modeli</td>
                     <td>
-                        <a href="@routes.Cars.showEditForm(bor.carss.id.get)">
-                            <button class="btn btn-warning">Edit</button>
-                        </a>
-                        <a href="@routes.Cars.remove(bor.carss.id.get)">
+                        <a href="@routes.Cars.remove(bor.id.get)">
                             <button class="btn btn-danger pull-right">Delete</button>
                         </a>
                     </td>
                 </tr>
             }
-                @for_num.nul
             </tbody>
         </table>
     </div>
