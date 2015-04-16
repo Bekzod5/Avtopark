@@ -35,7 +35,7 @@ class Cars  extends Controller {
     val formParams = request.body.asFormUrlEncoded
     val nomi = formParams.get("nomi")(0)
     val modeli = formParams.get("modeli")(0)
-    val korxonaId = formParams.get("korxonaId")(0).toInt
+    val korxonaId = formParams.get("korxonanomi")(0).toInt
 
 
 

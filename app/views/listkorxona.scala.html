@@ -7,7 +7,7 @@
     <div class="main-content top-mar container">
 
         <h1 class="text-center">Cars Oficce Table.</h1>
-        <table class="table " style="color: #0e37a6">
+        <table class="table ">
             <thead>
                 <tr>
                     <th><b>Name</b></th>
@@ -17,7 +17,7 @@
             @for(korxona1<- uzavto1) {
                 <tr>
                     <td><b>@korxona1.name</b></td>
-                    <td class="pull-right">
+                    <td >
                         <a href="@routes.zavod.showEditForm(korxona1.id.get)">
                             <button class="btn btn-warning">Edit</button>
                         </a>

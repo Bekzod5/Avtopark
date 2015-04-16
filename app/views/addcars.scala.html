@@ -1,10 +1,10 @@
-@()
+@(uzavto: List[korxona])
 
 @main("Add") {
 
-    @navbar()
+    @navbar("addcars")
 
-    <div class="container main-content">
+    <div class="container main-content top-mar">
         <h2 class="text-center">Add new cars</h2>
         <form class="@routes.Cars.add()" method="post">
             <div class="form-group">
@@ -13,9 +13,17 @@
                 name="nomi" required="">
             </div>
             <div class="form-group">
-                <label for="inp-desc">modeli</label>
-                <textarea type="text" class="form-control" id="inp-desc"
+                <label for="inp-model">modeli</label>
+                <textarea type="text" class="form-control" id="inp-model"
                 name="modeli" required=""></textarea>
+            </div>
+            <div class="form-group">
+                <label for="inp-car">Zavodi</label>
+                <select name="korxonanomi" class="form-control" id="inp-car">
+                @for(carrs <- uzavto) {
+                    <option value="@carrs.id">@carrs.name</option>
+                }
+                </select>
             </div>
 
 
