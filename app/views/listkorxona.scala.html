@@ -4,7 +4,7 @@
 
     @navbar("listkorxona")
 
-    <div class="main-content top-mar container">
+    <div class="main-content top-mar container " style="color: #ffffff">
 
         <h1 class="text-center">Cars Oficce Table.</h1>
         <table class="table ">
@@ -17,7 +17,7 @@
             @for(korxona1<- uzavto1) {
                 <tr>
                     <td><b>@korxona1.name</b></td>
-                    <td >
+                    <td class="pull-right">
                         <a href="@routes.zavod.showEditForm(korxona1.id.get)">
                             <button class="btn btn-warning">Edit</button>
                         </a>
